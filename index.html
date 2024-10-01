@@ -7,46 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Perizinan Andalalin</h1>
-
-    <div id="login">
-        <h2>Login</h2>
-        <input type="email" id="email" placeholder="Email">
-<input type="password" id="password" placeholder="Password">
-<button id="loginButton">Login</button>
-        <button onclick="register()">Register</button>
-    </div>
-
-    <div id="dashboard" style="display: none;">
-        <h2>Dashboard Pemohon</h2>
-        <button onclick="showPengajuanForm()">Ajukan Permohonan</button>
-        <div id="statusArea">
-            <p>Status: <span id="statusPermohonan"></span></p>
-            <p>Tanggal Ujian: <span id="tanggalUjian"></span></p>
-            <p>SK: <span id="skLink"></span></p>
-        </div>
-        <div id="notifikasi"></div>
-    </div>
-
-    <div id="pengajuanForm" style="display: none;">
-        <h2>Form Pengajuan Permohonan</h2>
-        <input type="text" id="namaPemohon" placeholder="Nama Pemohon" required>
-        <input type="text" id="alamatPemohon" placeholder="Alamat Pemohon" required>
-        <input type="text" id="nomorDokumen" placeholder="Nomor Dokumen" required>
-        <button onclick="ajukanPermohonan()">Ajukan</button>
-        <button onclick="cancelPengajuan()">Batal</button>
-    </div>
-
-    <div id="adminDashboard" style="display: none;">
-        <h2>Dashboard Admin</h2>
-        <button onclick="loadPermohonan()">Lihat Permohonan</button>
-        <div id="permohonanList"></div>
-    </div>
-
-    <script src="firebaseConfig.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
-    <script src="app.js"></script>
+    <h1>Selamat Datang di Aplikasi Perizinan Andalalin</h1>
+    <a href="login.html">Login untuk mengajukan permohonan</a>
 </body>
 </html>
