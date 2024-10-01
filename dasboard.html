@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <p>Selamat datang, <span id="userEmail"></span></p>
+    <button id="logout">Logout</button>
+
+    <h2>Ajukan Permohonan Baru</h2>
+    <form id="permohonanForm">
+        <input type="text" id="namaPemohon" placeholder="Nama Pemohon" required>
+        <input type="text" id="lokasi" placeholder="Lokasi Proyek" required>
+        <input type="file" id="dokumen" required>
+        <button type="submit">Ajukan</button>
+    </form>
+
+    <h2>Status Permohonan</h2>
+    <div id="statusPermohonan"></div>
+
+    <script src="firebase-config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
